@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1948.53 1298.19">
+  <defs>
+    <style>
+      .part1{
+        fill:#5441f8;
+      }
+      .gradient{
+        fill:url(#gradient);
+      }
+    </style>
+    <linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%" >
+        <stop offset="0%" stop-color="#50426b">
+            <animate attributeName="stop-color" values="#50426b; #58bd91; #50426b" dur="15s" repeatCount="indefinite"></animate>
+        </stop>
+
+        <stop offset="100%" stop-color="#58bd91">
+            <animate attributeName="stop-color" values="#58bd91; #50426b; #58bd91" dur="15s" repeatCount="indefinite"></animate>
+        </stop>
+    </linearGradient>
+  </defs>
+  <path class="gradient" d="M983,539.46S868,475,790.67,479.67s-142,35.33-246,100.67S266,713,144.67,521C49.32,370.13,30.21,342.18-138.67,328.33-350,311-477.69,116.41-426-49c70-224-102-300-146-328S-812-490.33-802-651H983Z" transform="translate(965.53 651)"/>
+</svg>

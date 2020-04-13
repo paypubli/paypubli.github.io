@@ -1,0 +1,190 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+$color1 : #d02b37;
+$color2 : #bc002d;
+$black : #3e3e3e;
+$font : 'Roboto', sans-serif;
+
+body{
+  background: url('../img/bg-repeat.png') repeat $black;
+}
+
+.top{
+  background: url('../img/bg-repeat.png') repeat #d02b37;
+  padding: 100px 0 160px;
+  h1{
+    font-family: $font;
+    font-weight: 300;
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+  }
+  h2{
+    font-family: $font;
+    font-weight: 300;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.container{
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cta{
+  background: url('../img/bg-repeat.png') repeat #fff;
+}
+
+@keyframes flutuar {
+  0%{
+    top: 70px;
+  }
+  100%{
+    top: 80px
+  }
+}
+
+.formulario-inscricao{
+  display: block;
+  max-width: 580px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 50px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  position: relative;
+  top: -120px;
+  .mc-field-group{
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    margin: 15px 0;
+    border: 2px solid #e8e8e8;
+    box-sizing: border-box;
+    background: #fff;
+  }
+  cite{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    svg{
+      width: 20px;
+      fill: #000;
+      margin-right: 10px;
+      margin-left: auto;
+    }
+    i{
+      font-family: $font;
+      font-weight: 300;
+      font-size: 16px;
+      color: $black;
+      font-style: normal;
+      display: block;
+      margin-right: auto;
+    }
+  }
+  input[type="text"],input[type="email"], input[type="submit"]{
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+    font-family: $font;
+    font-weight: 300;
+    font-size: 22px;
+    color: $black;
+  }
+  input[name="FNAME"]{
+    background: url('../img/icon-name.svg') no-repeat #fff;
+    background-size: 30px;
+    background-position: center right;
+  }
+  input[name="EMAIL"]{
+    background: url('../img/icon-email.svg') no-repeat #fff;
+    background-size: 30px;
+    background-position: center right;
+  }
+  input[name="PHONE"]{
+    background: url('../img/icon-phone.svg') no-repeat #fff;
+    background-size: 30px;
+    background-position: center right;
+  }
+  input[type="submit"]{
+    cursor: pointer;
+    background: $color1;
+    transition: all .2s linear;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    border-color: $color2;
+    &:hover{
+      background: $color2;
+    }
+  }
+  &:after{
+    content: "";
+    display: block;
+    width: 105px;
+    height: 150px;
+    background: url('../img/arrow.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: -150px;
+    top: 80px;
+    animation: flutuar .7s linear infinite;
+    animation-direction: alternate;
+  }
+  &:before{
+    content: "";
+    display: block;
+    width: 105px;
+    height: 150px;
+    background: url('../img/arrow.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -150px;
+    top: 80px;
+    transform: scaleX(-1);
+    animation: flutuar .7s linear infinite;
+    animation-direction: alternate;
+  }
+  #mce-success-response, #mce-error-response{
+    font-family: $font;
+    font-weight: 700;
+    font-size: 38px;
+    color: #ffc700;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+footer{
+  padding: 40px 0;
+  background: $black;
+  p{
+    font-family: $font;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    b{
+      font-weight: 700;
+    }
+  }
+}
