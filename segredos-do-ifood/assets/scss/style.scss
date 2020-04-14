@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 $color1 : #d02b37;
 $color2 : #bc002d;
@@ -16,23 +16,48 @@ body{
 
 .top{
   background: url('../img/bg-repeat.png') repeat #d02b37;
-  padding: 100px 0 160px;
+  padding: 40px 0 160px;
   h1{
-    font-family: $font;
-    font-weight: 300;
-    font-size: 38px;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 10px;
-  }
-  h2{
     font-family: $font;
     font-weight: 300;
     font-size: 24px;
     color: #fff;
     text-align: center;
+    display: block;
+    max-width: 500px;
+    margin: 0 auto 20px;
+  }
+  h2{
+    font-family: $font;
+    font-weight: 400;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    b{
+      display: block;
+      strong{
+        background: $black;
+        padding: 0 10px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &.v1{
+    h1{
+      font-size: 34px;
+      text-transform: initial;
+      b{
+        strong{
+          background: $black;
+          padding: 0 10px;
+          text-transform: uppercase;
+        }
+      }
+    }
+    h2{
+      font-size: 22px;
+    }
   }
 }
 
@@ -208,6 +233,131 @@ body{
     display: block;
     margin: 10px auto;
   }
+}
+
+div[for="mce-FNAME"], div[for="mce-EMAIL"]{
+    display: none !important;
+}
+
+.mce_inline_error::placeholder{
+  color: $color1;
+  font-weight: 700;
+}
+
+.video{
+  padding: 40px 0 60px;
+  background: #fff;
+  margin-bottom: -150px;
+  .playvd{
+    display: block;
+    max-width: 780px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: -150px;
+    box-sizing: border-box;
+    iframe{
+      width: 770px;
+      height: 433px;
+      margin-bottom: 30px;
+      border: 5px solid #fff;
+    }
+  }
+}
+
+.about{
+  padding: 60px 0;
+  background: #efefef;
+  h1{
+    font-family: $font;
+    font-weight: 700;
+    font-size: 38px;
+    color: $black;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+  }
+  p{
+    font-family: $font;
+    font-weight: 400;
+    font-size: 20px;
+    color: $black;
+    text-align: left;
+    line-height: 2;
+  }
+}
+
+.bullet{
+  padding: 60px 0;
+  background: #fff;
+  h1{
+    font-family: $font;
+    font-weight: 700;
+    font-size: 38px;
+    color: $black;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 50px;
+  }
+  .blocos{
+    display: flex;
+    align-items: center;
+    .col{
+      max-width: 350px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      img{
+        display: block;
+        margin: 0 auto 20px;
+      }
+      p{
+        font-family: $font;
+        font-weight: 400;
+        font-size: 17px;
+        color: $black;
+        text-align: center;
+        line-height: 1.6;
+        max-width: 280px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.btn{
+  font-family: $font;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  max-width: 480px;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  background: $color1;
+  transition: all .2s linear;
+  margin: 0 auto;
+  &:hover{
+    background: $color2;
+  }
+}
+
+.price{
+  font-family: $font;
+  font-weight: 300;
+  font-size: 22px;
+  color: $black;
+  text-align: center;
+  font-style: normal;
+  display: block;
+  margin: 10px auto;
 }
 
 footer{
