@@ -45,6 +45,8 @@ body{
   }
   &.v1{
     h1{
+      max-width: 100%;
+      margin: 0 auto 20px;
       font-size: 34px;
       text-transform: initial;
       b{
@@ -57,6 +59,10 @@ body{
     }
     h2{
       font-size: 22px;
+      text-transform: none;
+      b{
+        display: initial;
+      }
     }
   }
 }
