@@ -3,6 +3,4 @@ $(document).ready(function() {
 
   $('#ano').html(ano.getFullYear());
 
-  $("input[name='PHONE']").inputmask("99 - 99999-9999");
-
 });

@@ -45,7 +45,7 @@
 
     <header class="top">
       <div class="container">
-        <h1>Sabemos que essa pandemia tem afetado muitos <b>empregadores</b> e <b>trabalhadores</b>.</h1>
+        <h1>Essa pandemia afetou muitos <br> <b>empregadores</b> e <b>trabalhadores</b>.</h1>
         <h2>Descubra como contornar essa situação<br>sem sair de casa e faturando de <b><strong>R$3 mil a R$7 mil reais por mês</strong></b></h2>
       </div>
     </header>
@@ -100,5 +100,12 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/jquery.inputmask.bundle.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+      $("input[name='PHONE']").inputmask("99 - 99999-9999");
+
+    });
+    </script>
   </body>
 </html>
