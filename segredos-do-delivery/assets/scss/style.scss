@@ -329,6 +329,10 @@ div[for="mce-FNAME"], div[for="mce-EMAIL"]{
         opacity: .5;
         text-decoration: none;
         cursor: pointer;
+        &:hover{
+          opacity: 1;
+          transition: all .2s linear;
+        }
         &.act{
           opacity: 1;
           cursor: pointer;
@@ -374,7 +378,7 @@ div[for="mce-FNAME"], div[for="mce-EMAIL"]{
     .description{
       margin: 20px 0 0;
       display: block;
-      max-width: 750px;
+      //max-width: 750px;
       h2{
         font-family: $font;
         font-size: 24px;
@@ -389,7 +393,7 @@ div[for="mce-FNAME"], div[for="mce-EMAIL"]{
       }
       p{
         font-family: $font;
-        font-size: 18px;
+        font-size: 22px;
         color: #09172c;
         font-weight: 400;
         text-align: justify;
@@ -430,6 +434,28 @@ div[for="mce-FNAME"], div[for="mce-EMAIL"]{
             margin-right: auto;
           }
         }
+      }
+    }
+  }
+  .arrows{
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    a{
+      display: block;
+      background: $color1;
+      padding: 10px 20px;
+      font-family: $font;
+      font-size: 16px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      text-transform: uppercase;
+      &:first-child{
+        margin-right: auto;
+      }
+      &:last-child{
+        margin-left: auto;
       }
     }
   }
@@ -582,12 +608,16 @@ div[for="mce-FNAME"], div[for="mce-EMAIL"]{
 .price{
   font-family: $font;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 20px;
   color: $black;
   text-align: center;
   font-style: normal;
   display: block;
   margin: 10px auto;
+  b{
+    display: block;
+    font-size: 34px;
+  }
 }
 
 .modulos{
@@ -935,6 +965,28 @@ footer{
     width: 320px;
     height: 180px;
   }
+  .descoberta .center .playlist .vds{
+    display: block;
+  }
+  .descoberta .center .playlist .vds img{
+    display: block;
+    margin: 0 auto;
+  }
+  .descoberta .center .playlist .vds span{
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+  }
+  .descoberta .center .playlist .vds strong{
+    font-weight: bold;
+    color: $color1;
+  }
+  .descoberta .center .playlist .vds b{
+    display: none;
+  }
+  .descoberta .center .description h2 strong{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 750px){
@@ -969,37 +1021,23 @@ footer{
   .top h2 b strong{
     font-size: 26px;
   }
+  .descoberta .center .description p{
+    font-size: 18px;
+  }
+  .modulos .blocos:last-child .col {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 620px){
   body#descoberta .container {
     max-width: 440px;
   }
-  .descoberta .center .playlist .vds{
-    display: block;
-  }
-  .descoberta .center .playlist .vds img{
-    display: block;
-    margin: 0 auto;
-  }
-  .descoberta .center .playlist .vds span{
-    text-align: center;
-    display: block;
-    margin: 10px auto;
-  }
-  .descoberta .center .playlist .vds strong{
-    font-weight: bold;
-    color: $color1;
-  }
-  .descoberta .center .playlist .vds b{
-    display: none;
-  }
+
   .descoberta .center .video-main {
     height: 250px;
   }
-  .descoberta .center .description h2 strong{
-    display: none;
-  }
+
 }
 
 @media screen and (max-width: 600px){
